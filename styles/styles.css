@@ -1,8 +1,17 @@
+/* CSS might've required the help from various sources for the navigation bar, mainly the use of flexbox (display: flex) */
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
 /* Navigation for all pages */
 
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(0, 127, 190), rgb(158, 0, 158));
+    color: white;
 }
 
 header{
@@ -61,13 +70,10 @@ nav ul{
 
 .about_mainbody{
     font-size: 1.3rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
-.about_title{
-    text-align: center;
-}
 
 .group_photo{
     border: 1px black solid;
@@ -95,18 +101,22 @@ nav ul{
     font-size: 1.3rem;
 }
 
-.apply_form h2{
-    text-align: center;
+
+input::placeholder{
+    color: white;
 }
 
 #First_Name, #Last_Name, #Street_Address, #Suburb_or_Town, #Email, #Phone_Number{
     width: 100%;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+    background-color: rgb(162, 162, 162);
+    color: white;
 }
 
 #Ref_Num ,#Birth_Date, #State, #Postcode{
     font-size: 1.3rem;
+    background-color: rgb(162, 162, 162);
 }
 
 .field_1, .field_2, .field_3, .field_4{
@@ -142,3 +152,7 @@ nav ul{
 }
 
 /* jobs.html */
+.jobs_mainbody{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
