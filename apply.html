@@ -11,8 +11,7 @@
         <nav class="nav_bar">
             <div class="Logo_nav">
                 <img src="/images/World_Amphoreus.jpg" alt="Ampho logo" class="logo">
-                <h1>Amphoreus - The Eternal Land</h1>
-                
+                <h2>Amphoreus - The Eternal Land</h2>
             </div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -24,26 +23,26 @@
         </nav>
     </header>
 
-    <h1>Application Form</h1>
-    <form action="https://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset>
-            <fieldset>
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php" class="apply_form">
+        <h2>Application Form</h2>
+        <fieldset class="parent_field">
+            <fieldset class="field_1">
                 <label for="Ref_Num">Job reference number</label>
                 <select name="" id="Ref_Num">
-                    <option value="Ref_ID_01">01</option>
-                    <option value="Ref_ID_02">02</option>
+                    <option value="Ref_ID_01">A0001</option>
+                    <option value="Ref_ID_02">A0002</option>
                 </select>
                 <br>
-                <label for="First_Name">First Name</label>
-                <input type="text" name="" id="First_Name" placeholder="Max: 20 Alphabetical Characters" pattern="[A-Za-z]{1,20}" title="Inappropriate input">
+                <label for="First_Name">First Name:</label>
+                <input type="text" name="First_Name" id="First_Name" placeholder="Max: 20 Alphabetical Characters" pattern="[A-Za-z]{1,20}" title="Inappropriate input">
                 <br>
-                <label for="Last_Name">Last Name</label>
-                <input type="text" name="" id="Last_Name" placeholder="Max: 20 Alphabetical Characters" pattern="[A-Za-z]{1,20}" title="Inappropriate input">
+                <label for="Last_Name">Last Name:</label>
+                <input type="text" name="Last_Name" id="Last_Name" placeholder="Max: 20 Alphabetical Characters" pattern="[A-Za-z]{1,20}" title="Inappropriate input">
                 <br>
-                <label for="Birth_Date">Date of Birth</label>
-                <input type="date" name="" id="Birth_Date" pattern="^([01][0-9]|2[0-3]):[0-5][0-9]$" title="Inappropriate input">
+                <label for="Birth_Date">Date of Birth:</label>
+                <input type="date" name="Birth_Date" id="Birth_Date" pattern="^([01][0-9]|2[0-3]):[0-5][0-9]$" title="Inappropriate input">
             </fieldset>
-            <fieldset>
+            <fieldset class="field_2">
                 <legend>Gender</legend>
                 <input type="radio" name="Gender" id="Male" required checked>
                 <label for="Male">Male</label>
@@ -54,15 +53,15 @@
                 <input type="radio" name="Gender" id="Prefer not say">
                 <label for="Prefer not say">Prefer not say</label>
             </fieldset>
-            <fieldset>
-                <label for="Street_Address">Street Address</label>
-                <input type="text" name="" id="Street_Address" maxlength="40" placeholder="Max: 40 Characters" title="Inappropriate input">
+            <fieldset class="field_3">
+                <label for="Street_Address">Street Address:</label>
+                <input type="text" name="Street_Address" id="Street_Address" maxlength="40" placeholder="Max: 40 Characters" title="Inappropriate input">
                 <br>
-                <label for="Suburb/Town">Suburb/Town</label>
-                <input type="text" name="" id="Suburb/Town" maxlength="40" placeholder="Max: 40 Characters" title="Inappropriate input">
+                <label for="Suburb/Town">Suburb/Town:</label>
+                <input type="text" name="Suburb_or_Town" id="Suburb_or_Town" maxlength="40" placeholder="Max: 40 Characters" title="Inappropriate input">
                 <br>
-                <label for="State">State</label>
-                <select name="" id="State">
+                <label for="State">State:</label>
+                <select name="State" id="State">
                     <option value="VIC">VIC</option>
                     <option value="NCW">NCW</option>
                     <option value="QLD">QLD</option>
@@ -73,32 +72,38 @@
                     <option value="ACT">ACT</option>
                 </select>
                 <label for="">Postcode</label>
-                <input type="text" name="" id="Postcode" pattern="\d{4}" placeholder="4 digits" title="Inappropriate input">
+                <input type="text" name="Postcode" id="Postcode" pattern="\d{4}" placeholder="4 digits" title="Inappropriate input">
             </fieldset>
-            <fieldset>
+            <fieldset class="field_4">
                 <label for="Email">Email Address</label>
-                <input type="text" name="" id="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" placeholder="example.com" title="Inappropriate input">
+                <input type="text" name="Email" id="Email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" placeholder="example.com" title="Inappropriate input">
                 <label for="Phone_Number">Phone Number</label>
-                <input type="text" name="" id="Phone_Number" pattern="[0-9 ]{8,12}" placeholder="8 - 12 digits or spaces" title="Inappropriate input">
-                <fieldset>
+                <input type="text" name="Phone Number" id="Phone_Number" pattern="[0-9 ]{8,12}" placeholder="8 - 12 digits or spaces" title="Inappropriate input">
+                <fieldset class="4s_child_check">
                     <legend>Technical List</legend>
-                    <input type="checkbox" name="" id="Cloud Engineering">
-                    <label for="Cloud Engineering">Cloud Engineering</label>
-                    <input type="checkbox" name="" id="Cybersecurity">
-                    <label for="Cybersecurity">Cybersecurity</label>
-                    <input type="checkbox" name="" id="Programming">
-                    <label for="Programming">Programming</label>
-                    <input type="checkbox" name="" id="Web Development">
-                    <label for="Web Development">Web Development</label>
-                    <input type="checkbox" name="" id="Artificial Intelligence">
-                    <label for="Artificial Intelligence">Artificial Intelligence</label>
+                    <input type="checkbox" name="HTML" id="HTML">
+                    <label for="HTML">HTML</label>
+                    <input type="checkbox" name="CSS" id="CSS">
+                    <label for="CSS">CSS</label>
+                    <input type="checkbox" name="JavaScript" id="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                    <input type="checkbox" name="PHP" id="PHP">
+                    <label for="PHP">PHP</label>
+                    <input type="checkbox" name="C#" id="C#">
+                    <label for="C#">C#</label>
                 </fieldset>
             </fieldset>
-            <label for="Other">Other Skills:</label>
-            <textarea name="" id="" placeholder="Fill in your other skills here..."></textarea>
+            <div class="other_skills">
+                <label for="Other">Other Skills:</label>
+                <br>
+                <textarea name="Other_skills" id="Other_skills" placeholder="Fill in your other skills here..."></textarea>
+            </div>
+
         </fieldset>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset form">
+        <div class="final">
+            <input type="submit" value="Submit" class="final_child">
+            <input type="reset" value="Reset form" class="final_child">
+        </div>
     </form>
 </body>
 </html>

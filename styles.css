@@ -2,11 +2,11 @@
 
 body{
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav_bar{
@@ -37,6 +37,7 @@ header{
 
 nav ul{
     list-style: none;
+    margin: 0px;
 }
 
 .menu li{
@@ -58,8 +59,73 @@ nav ul{
 
 /* about/html */
 
+body{
+    font-size: 1.3rem;
+}
+
+.group_photo{
+    border: 1px black solid;
+    text-align: center;
+}
+
+.group_photo img{
+    width: 30%;
+}
+
 /* index.html */
 
 /* apply.html */
+
+.apply_form{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    font-size: 1.3rem;
+}
+
+.apply_form h2{
+    text-align: center;
+}
+
+#First_Name, #Last_Name, #Street_Address, #Suburb_or_Town, #Email, #Phone_Number{
+    width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+#Ref_Num ,#Birth_Date, #State, #Postcode{
+    font-size: 1.3rem;
+}
+
+.field_1, .field_2, .field_3, .field_4{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.parent_field{
+    padding: 10px;
+    margin: 15px;
+}
+
+.other_skills{
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.other_skills textarea{
+    width: 100%;
+    height: 5rem;
+    font-size: 1.3rem;
+}
+
+.final{
+    justify-content: center;
+    display: flex;
+}
+
+.final_child{
+    margin: 5px;
+    font-size: 1.3rem;
+}
 
 /* jobs.html */
