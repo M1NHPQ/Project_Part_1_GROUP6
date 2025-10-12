@@ -57,19 +57,32 @@ nav ul{
 }
 
 
-/* about/html */
+/* about.html */
 
-body{
+.about_mainbody{
     font-size: 1.3rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.about_title{
+    text-align: center;
 }
 
 .group_photo{
     border: 1px black solid;
     text-align: center;
+    width: 30%;
+    display: block;
+    text-align: center;
 }
 
 .group_photo img{
     width: 30%;
+}
+
+.interest_table, .interest_table th, .interest_table td{
+    border: 1px solid black;
 }
 
 /* index.html */
