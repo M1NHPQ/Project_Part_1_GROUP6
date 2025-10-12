@@ -70,8 +70,13 @@ nav ul{
 
 .about_mainbody{
     font-size: 1.3rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.photo_section{
+    float: right;
+    clear: left;
 }
 
 
@@ -85,12 +90,44 @@ nav ul{
 
 .group_photo img{
     width: 30%;
-}
-
-.interest_table, .interest_table th, .interest_table td{
     border: 1px solid black;
 }
 
+.interest_table, .interest_table th, .interest_table td{
+    border: 1px solid white;
+}
+
+.name_and_time{
+    float: left;
+    margin-bottom: 2rem;
+}
+
+.studentID{
+    float: right;
+}
+
+.Tutor_Name{
+    float: left;
+    clear: left;
+}
+
+.Contribution_list{
+    float: left;
+    clear: left;
+}
+
+.Interests{
+    clear: both;
+}
+
+.interest_table{
+    margin: auto;
+    background-color: rgb(0, 0, 113);
+}
+
+.interest_table th:hover, .interest_table td:hover{
+    color: rgb(255, 143, 143);
+}
 /* index.html */
 
 /* apply.html */
@@ -102,11 +139,12 @@ nav ul{
 }
 
 
-input::placeholder{
+input::placeholder, .other_skills textarea::placeholder{
     color: white;
 }
 
-#First_Name, #Last_Name, #Street_Address, #Suburb_or_Town, #Email, #Phone_Number{
+
+#First_Name, #Last_Name, #Street_Address, #Suburb_or_Town, #Email, #Phone_Number, .other_skills textarea{
     width: 100%;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
@@ -122,6 +160,11 @@ input::placeholder{
 .field_1, .field_2, .field_3, .field_4{
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+.field_2, .field_4s_child_check{
+    display: flex;
+    justify-content: space-between;
 }
 
 .parent_field{
@@ -150,6 +193,7 @@ input::placeholder{
     margin: 5px;
     font-size: 1.3rem;
 }
+
 
 /* jobs.html */
 .jobs_mainbody{
