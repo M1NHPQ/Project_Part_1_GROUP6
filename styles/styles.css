@@ -178,6 +178,15 @@ footer{
     background-color: rgb(70, 32, 148);
 }
 
+#github_link{
+    text-decoration: none;
+    color: white;
+}
+
+#github_link:hover{
+    color: blue;
+}
+
 /* apply.html */
 
 .apply_form{
@@ -187,12 +196,15 @@ footer{
 }
 
 
-input::placeholder, .other_skills textarea::placeholder{
+.apply_form input::placeholder, .other_skills textarea::placeholder{
     color: white;
 }
 
+.apply_form input, .other_skills textarea, #Ref_Num, #State{
+    border: black 2px solid;
+}
 
-#First_Name, #Last_Name, #Street_Address, #Suburb_or_Town, #Email, #Phone_Number, .other_skills textarea{
+#First_Name, #Last_Name, #Street_Address, #Suburb-Town, #Email, #Phone_Number, .other_skills textarea{
     width: 100%;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
